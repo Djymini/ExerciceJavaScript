@@ -523,100 +523,192 @@
 // console.log(zodiacSigns.length);
 
 
-//Exercice7
-// Voici un objet qui représente un Chat : interdit d'y toucher :) 
-const billyTheCat = {
-    name: "billy",
-    color: "black",
-    favouriteFoods: ["fish", "chicken"],
-    isHungry: true,
-    meow: function () {
-        return "Meeeeeeeow";
+// //Exercice7
+// // Voici un objet qui représente un Chat : interdit d'y toucher :) 
+// const billyTheCat = {
+//     name: "billy",
+//     color: "black",
+//     favouriteFoods: ["fish", "chicken"],
+//     isHungry: true,
+//     meow: function () {
+//         return "Meeeeeeeow";
+//     }
+// }
+
+// /*
+//  * -------------------------------------------------------
+//  * 1 - Afficher les valeurs de chacunes des clés
+//  * -------------------------------------------------------
+//  */
+// console.log("name : " + billyTheCat.name);
+// console.log("color : " + billyTheCat.color);
+// console.log("favouriteFoods : " + billyTheCat.favouriteFoods);
+// console.log("isHungry : " + billyTheCat.isHungry);
+// console.log("meow : " + billyTheCat.meow);
+
+
+
+// /**
+//  * -------------------------------------------------------
+//  * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
+//  * -------------------------------------------------------
+//  */
+// let demand = prompt("Que voulez-vous ?");
+// console.log(billyTheCat[demand]);
+
+
+
+// // Voici un tableau d'objets : interdit d'y toucher  :) 
+// const animals = [
+//     { name: "kitty", species: "cat", noise: "meow" },
+//     { name: "skaly", species: "squale", noise: "frrrrrr" },
+//     { name: "wormy", species: "worm", noise: "????" },
+//     { name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa" }
+// ];
+
+// /*
+//  * -------------------------------------------------------
+//  * 3 - Afficher le dernier élément
+//  * -------------------------------------------------------
+//  */
+// console.log(animals[3]);
+
+
+
+// /**
+//  * -------------------------------------------------------
+//  * 3 - Afficher le dernier élément sans savoir que c'est le 4ème
+//  * -------------------------------------------------------
+//  */
+// console.log(animals[animals.length-1]);
+
+
+// /**
+//  * -------------------------------------------------------
+//  * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
+//  * -------------------------------------------------------
+//  */
+// delete animals[1].name;
+// delete animals[2].species;
+
+
+
+// /**
+//  * -------------------------------------------------------
+//  * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
+//  * -------------------------------------------------------
+//  */
+// animals[0].name = animals[3].name;
+// console.log(animals);
+
+
+
+// // Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
+// const apple = {
+//     isEaten: false,
+//     eat: function () {
+//         return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
+//     }
+// }
+
+// /**
+//  * -------------------------------------------------------
+//  * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
+//  * -------------------------------------------------------
+//  */
+// apple.eat();
+// if (apple.isEaten) {
+//   console.log(apple.eat());
+// }
+
+//Exercice8
+ /*
+   * -------------------------------------------------------
+   * 1 - Vous êtes un pilote de F1.
+   * 
+   * Créer une boucle qui permette d'afficher "Tour n°X" sur vos 50 tours de circuits
+   * 
+   * Ex : 
+   * Tour n°1
+   * Tour n°2
+   * Tour n°3
+   * etc...
+   * -------------------------------------------------------
+*/
+for (let index = 1; index < 51; index++) {
+    console.log("Tour n°"+index);
+}
+
+
+
+ /*
+   * -------------------------------------------------------
+   * 2 - Vous êtes (encore) un pilote de F1 mais cette fois-ci, vous avez avec vous un copain-pilote avec vous parce que vous avez deux fois plus de tours à faire.
+   * 
+   * Créer une boucle qui affiche tous les tours 🔂
+   * Si vous êtes au premier tour, afficher "Zé bartiii, c'est à conducteur 1️⃣ de démarrer"
+   * Si vous êtes au tour 25, afficher "Il faut changer de conducteur, c'est à conducteur 2️⃣"
+   * Si vous êtes au tour 50, afficher "Il faut changer de conducteur, c'est à conducteur 1️⃣"
+   * Si vous êtes au tour 75, afficher "Il faut changer de conducteur, c'est à conducteur 2️⃣"
+   * Si vous êtes au tour 100, afficher "C'est fini, bien joué à tous, HIGH FIVE ! 🙌😎"
+   * -------------------------------------------------------
+*/
+for (let index = 1; index < 101; index++) {
+    switch (index) {
+        case 1:
+            console.log("Tour n°"+index+" Zé bartiii, c'est à conducteur 1️⃣ de démarrer");
+            break;
+        case 25:
+            console.log("Tour n°"+index+" Il faut changer de conducteur, c'est à conducteur 2️⃣");
+            break;
+        case 50:
+            console.log("Tour n°"+index+" Il faut changer de conducteur, c'est à conducteur 1️⃣");
+            break;
+        case 75:
+            console.log("Tour n°"+index+" Il faut changer de conducteur, c'est à conducteur 2️⃣");
+            break;
+        case 100:
+            console.log("Tour n°"+index+" C'est fini, bien joué à tous, HIGH FIVE ! 🙌😎");
+            break;
+        default:
+            console.log("Tour n°"+index);
+            break;
     }
 }
 
-/*
- * -------------------------------------------------------
- * 1 - Afficher les valeurs de chacunes des clés
- * -------------------------------------------------------
- */
-console.log("name : " + billyTheCat.name);
-console.log("color : " + billyTheCat.color);
-console.log("favouriteFoods : " + billyTheCat.favouriteFoods);
-console.log("isHungry : " + billyTheCat.isHungry);
-console.log("meow : " + billyTheCat.meow);
 
-
-
-/**
- * -------------------------------------------------------
- * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
- * -------------------------------------------------------
- */
-let demand = prompt("Que voulez-vous ?");
-console.log(billyTheCat[demand]);
-
-
-
-// Voici un tableau d'objets : interdit d'y toucher  :) 
-const animals = [
-    { name: "kitty", species: "cat", noise: "meow" },
-    { name: "skaly", species: "squale", noise: "frrrrrr" },
-    { name: "wormy", species: "worm", noise: "????" },
-    { name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa" }
-];
-
-/*
- * -------------------------------------------------------
- * 3 - Afficher le dernier élément
- * -------------------------------------------------------
- */
-console.log(animals[3]);
-
-
-
-/**
- * -------------------------------------------------------
- * 3 - Afficher le dernier élément sans savoir que c'est le 4ème
- * -------------------------------------------------------
- */
-console.log(animals[animals.length-1]);
-
-
-/**
- * -------------------------------------------------------
- * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
- * -------------------------------------------------------
- */
-delete animals[1].name;
-delete animals[2].species;
-
-
-
-/**
- * -------------------------------------------------------
- * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
- * -------------------------------------------------------
- */
-animals[0].name = animals[3].name;
-console.log(animals);
-
-
-
-// Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
-const apple = {
-    isEaten: false,
-    eat: function () {
-        return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
+ /*
+   * -------------------------------------------------------
+   * 3 - Vous êtes (toujours) un pilote de F1, sur 101 tours. Vous devez maintenant faire attention à votre essence. 
+   * 
+   * Votre réserve de carburant est de 74L.
+   * Chaque tour consomme 7L.
+   * 
+   * Créer une boucle qui affiche tous les tours et le fuel restant à la fin de chaque tour 🔂. Ex : "Tour n°88, Fuel restant : 19"
+   * Si vous allez être à court de carburant au prochain tour : 
+   *    afficher en warning : "Attention carburant à recharger au prochain tour⛽️"
+   *    recharger le carburant le tour suivant
+   * Une fois le carburant rechargé, afficher en warning : "Le refuel a été fait 🙌😎"
+   * Une fois la course terminée, afficher le nombre total de refuel qui aura été nécéssaire. Ex : "Nombre total de refuel :  2"
+   * Vous devez obtenir le résultat de la capture d'écran "boucles-basiques-resultat"
+   * -------------------------------------------------------
+*/
+let reserve = 74;
+let numberOfRefuel = 0;
+for (let index = 1; index < 102; index++) {
+    reserve -= 7;
+    if(reserve <= 7) {
+        console.log("Tour n°"+index+", Fuel restant : "+reserve);
+        console.warn("Attention carburant à recharger au prochain tour⛽️");
+        numberOfRefuel +=1;
+        reserve = 74
+        console.warn("Le refuel a été fait 🙌😎");
     }
+    else if (index !==1 && reserve === 74) {
+        console.log("Tour n°"+index+", Fuel restant : "+reserve);
+    }
+    else {
+        console.log("Tour n°"+index+", Fuel restant : "+reserve);
+    }  
 }
-
-/**
- * -------------------------------------------------------
- * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
- * -------------------------------------------------------
- */
-apple.eat();
-if (apple.isEaten) {
-  console.log(apple.eat());
-}
+console.log("Nombre total de refuel : "+numberOfRefuel);
