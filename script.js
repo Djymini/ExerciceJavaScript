@@ -354,113 +354,211 @@
 // }
 
 
-//Exercice6
-// Voici un jeu de données : interdiction d'y toucher :) 
-const characterNames = [
-    "63AIS",
-    "A'misandra",
-    "Amimari",
-    "Alika",
-    "54B2",
-    "A'merpact",
-    "Amazora",
-  ];
+// //Exercice6
+// // Voici un jeu de données : interdiction d'y toucher :) 
+// const characterNames = [
+//     "63AIS",
+//     "A'misandra",
+//     "Amimari",
+//     "Alika",
+//     "54B2",
+//     "A'merpact",
+//     "Amazora",
+//   ];
   
-  /*
-   * -------------------------------------------------------
-   * 1 - Afficher le nombre de personnages dans le tableau 
-   * -------------------------------------------------------
-   */
-  console.log(characterNames.length);
-  
-  
-  /*
-   * -------------------------------------------------------
-   * 2 - Afficher le nom du premier personnage du tableau
-   * -------------------------------------------------------
-   */
-  console.log(characterNames[0]);
+//   /*
+//    * -------------------------------------------------------
+//    * 1 - Afficher le nombre de personnages dans le tableau 
+//    * -------------------------------------------------------
+//    */
+//   console.log(characterNames.length);
   
   
-  /*
-   * -------------------------------------------------------
-   * 3 - Afficher le nom du dernier personnage (le 7eme)
-   * -------------------------------------------------------
-   */
-  console.log(characterNames[6]);
+//   /*
+//    * -------------------------------------------------------
+//    * 2 - Afficher le nom du premier personnage du tableau
+//    * -------------------------------------------------------
+//    */
+//   console.log(characterNames[0]);
   
   
-  /*
-   * -------------------------------------------------------
-   * 4 - Afficher le nom du dernier personnage **SANS** 
-   * savoir qu'il est le 7eme
-   * -------------------------------------------------------
-   */
-  console.log(characterNames[characterNames.length-1]);
+//   /*
+//    * -------------------------------------------------------
+//    * 3 - Afficher le nom du dernier personnage (le 7eme)
+//    * -------------------------------------------------------
+//    */
+//   console.log(characterNames[6]);
   
   
-  /*
-   * -------------------------------------------------------
-   * 5 - Afficher les noms de tous les personnages
-   * -------------------------------------------------------
-   */
- for (let index = 0; index < characterNames.length; index++) {
-    console.log(characterNames[index]);
- }
+//   /*
+//    * -------------------------------------------------------
+//    * 4 - Afficher le nom du dernier personnage **SANS** 
+//    * savoir qu'il est le 7eme
+//    * -------------------------------------------------------
+//    */
+//   console.log(characterNames[characterNames.length-1]);
   
   
-  /*
-   * -------------------------------------------------------
-   * 6 - Afficher le nom de chaque personnage accompagné du 
-   * nombre de caractères qu'il contient. Ex: Alika (5)
-   * -------------------------------------------------------
-   */
-  for (let index = 0; index < characterNames.length; index++) {
-    console.log(characterNames[index] + " (" + index + ")");
-  }
+//   /*
+//    * -------------------------------------------------------
+//    * 5 - Afficher les noms de tous les personnages
+//    * -------------------------------------------------------
+//    */
+//  for (let index = 0; index < characterNames.length; index++) {
+//     console.log(characterNames[index]);
+//  }
   
   
-  /*
-   * -------------------------------------------------------
-   * 7 - Afficher le nom de chaque personnage en minuscules
-   * -------------------------------------------------------
-   */
-  for (let index = 0; index < characterNames.length; index++) {
-    console.log(characterNames[index].toLowerCase());
-  }
+//   /*
+//    * -------------------------------------------------------
+//    * 6 - Afficher le nom de chaque personnage accompagné du 
+//    * nombre de caractères qu'il contient. Ex: Alika (5)
+//    * -------------------------------------------------------
+//    */
+//   for (let index = 0; index < characterNames.length; index++) {
+//     console.log(characterNames[index] + " (" + index + ")");
+//   }
+  
+  
+//   /*
+//    * -------------------------------------------------------
+//    * 7 - Afficher le nom de chaque personnage en minuscules
+//    * -------------------------------------------------------
+//    */
+//   for (let index = 0; index < characterNames.length; index++) {
+//     console.log(characterNames[index].toLowerCase());
+//   }
   
   
   
   
-  /*
-   * -------------------------------------------------------
-   * 8 - Afficher le nombre de personnages dont le nom 
-   * contient la lettre 'a' (minuscule ou majuscule)
-   * -------------------------------------------------------
-   */
-  for (let index = 0; index < characterNames.length; index++) {
-    if(characterNames[index].indexOf("a") > -1 || characterNames[index].indexOf("A") > -1) {
-        console.log(characterNames[index]);
+//   /*
+//    * -------------------------------------------------------
+//    * 8 - Afficher le nombre de personnages dont le nom 
+//    * contient la lettre 'a' (minuscule ou majuscule)
+//    * -------------------------------------------------------
+//    */
+//   for (let index = 0; index < characterNames.length; index++) {
+//     if(characterNames[index].indexOf("a") > -1 || characterNames[index].indexOf("A") > -1) {
+//         console.log(characterNames[index]);
+//     }
+//   }
+  
+  
+  
+//   /*
+//    * -------------------------------------------------------
+//    * 9 - Créer une fonction `search(needle)` qui renvoie 
+//    * les personnages dont le nom contient les lettres 
+//    * passées en paramètre.
+//    * 
+//    * Ex : search('Amim') doit renvoyer 'Amimari'
+//    * ------------------------------------------------------- 
+//    */
+//   function search() {
+//     let a = prompt("Que recherchez-vous ?");
+//     for (let index = 0; index < characterNames.length; index++) {
+//         if(characterNames[index].indexOf(a) > -1) {
+//             console.log(characterNames[index]);
+//         }
+//       }
+//   }
+//   search();
+
+//Exercice7
+// Voici un objet qui représente un Chat : interdit d'y toucher :) 
+const billyTheCat = {
+    name: "billy",
+    color: "black",
+    favouriteFoods: ["fish", "chicken"],
+    isHungry: true,
+    meow: function () {
+        return "Meeeeeeeow";
     }
-  }
-  
-  
-  
-  /*
-   * -------------------------------------------------------
-   * 9 - Créer une fonction `search(needle)` qui renvoie 
-   * les personnages dont le nom contient les lettres 
-   * passées en paramètre.
-   * 
-   * Ex : search('Amim') doit renvoyer 'Amimari'
-   * ------------------------------------------------------- 
-   */
-  function search() {
-    let a = prompt("Que recherchez-vous ?");
-    for (let index = 0; index < characterNames.length; index++) {
-        if(characterNames[index].indexOf(a) > -1) {
-            console.log(characterNames[index]);
-        }
-      }
-  }
-  search();
+}
+
+/*
+ * -------------------------------------------------------
+ * 1 - Afficher les valeurs de chacunes des clés
+ * -------------------------------------------------------
+ */
+console.log("name : " + billyTheCat.name);
+console.log("color : " + billyTheCat.color);
+console.log("favouriteFoods : " + billyTheCat.favouriteFoods);
+console.log("isHungry : " + billyTheCat.isHungry);
+console.log("meow : " + billyTheCat.meow);
+
+
+
+/**
+ * -------------------------------------------------------
+ * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
+ * -------------------------------------------------------
+ */
+let demand = prompt("Que voulez-vous ?");
+console.log(billyTheCat[demand]);
+
+
+
+// Voici un tableau d'objets : interdit d'y toucher  :) 
+const animals = [
+    { name: "kitty", species: "cat", noise: "meow" },
+    { name: "skaly", species: "squale", noise: "frrrrrr" },
+    { name: "wormy", species: "worm", noise: "????" },
+    { name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa" }
+];
+
+/*
+ * -------------------------------------------------------
+ * 3 - Afficher le dernier élément
+ * -------------------------------------------------------
+ */
+console.log(animals[3]);
+
+
+
+/**
+ * -------------------------------------------------------
+ * 3 - Afficher le dernier élément sans savoir que c'est le 4ème
+ * -------------------------------------------------------
+ */
+console.log(animals[animals.length-1]);
+
+
+/**
+ * -------------------------------------------------------
+ * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
+ * -------------------------------------------------------
+ */
+delete animals[1].name;
+delete animals[2].species;
+
+
+
+/**
+ * -------------------------------------------------------
+ * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
+ * -------------------------------------------------------
+ */
+animals[0].name = animals[3].name;
+console.log(animals);
+
+
+
+// Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
+const apple = {
+    isEaten: false,
+    eat: function () {
+        return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
+    }
+}
+
+/**
+ * -------------------------------------------------------
+ * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
+ * -------------------------------------------------------
+ */
+apple.eat();
+if (apple.isEaten) {
+  console.log(apple.eat());
+}
