@@ -308,47 +308,159 @@
 // }
 
 
-//Exercice5
-/*
-   * -------------------------------------------------------
-   * 1 - Écrire une fonction qui prend 2 paramètres et qui retourne la somme de ces 2 paramètres. Afficher le résultat dans la console.
-   * -------------------------------------------------------
-*/
-function addKevin(a,b) {
-    let somme = a+b;
-    return somme;
-}
-console.log(addKevin(2,8));
+// //Exercice5
+// /*
+//    * -------------------------------------------------------
+//    * 1 - Écrire une fonction qui prend 2 paramètres et qui retourne la somme de ces 2 paramètres. Afficher le résultat dans la console.
+//    * -------------------------------------------------------
+// */
+// function addKevin(a,b) {
+//     let somme = a+b;
+//     return somme;
+// }
+// console.log(addKevin(2,8));
 
-/*
-   * -------------------------------------------------------
-   * 2 - Écrire une fonction qui prend 2 paramètres et qui retourne la somme de :
-   *  → la raçine carrée du premier paramètres
-   *  → le second paramètre à la puissance 7
-   *  Afficher le résultat dans la console.
-   * -------------------------------------------------------
-*/
-function calcKevin(a,b) {
-    let somme = Math.sqrt(a) + Math.pow(b,7);
-    return somme;
-}
-console.log(calcKevin(25,2));
+// /*
+//    * -------------------------------------------------------
+//    * 2 - Écrire une fonction qui prend 2 paramètres et qui retourne la somme de :
+//    *  → la raçine carrée du premier paramètres
+//    *  → le second paramètre à la puissance 7
+//    *  Afficher le résultat dans la console.
+//    * -------------------------------------------------------
+// */
+// function calcKevin(a,b) {
+//     let somme = Math.sqrt(a) + Math.pow(b,7);
+//     return somme;
+// }
+// console.log(calcKevin(25,2));
 
-/*
-   * -------------------------------------------------------
-   * 3 - Créer une fonction qui vérifie si l’utilisateur est apte à apprendre du Javascript : 
-    avec prompt, demander successivement à l’utilisateur les deux langages de programmation à apprendre avant de démarrer le JS
-    → S’il répond successivement HTML puis CSS, alors la fonction retourne vrai ; sinon faux.
-    → Si l’exécution de la fonction retourne vrai, alors la console affiche “Bienvenue en JS jeune éphèbe”
-    → Si l’exécution de la fonction retourne faux, alors la console affiche “Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais”
-   * -------------------------------------------------------
-*/
-let questionJave1 = prompt("Quel est le premier langage à apprendre avant le JS ?");
-let questionJave2 = prompt("Quel est l'autre langage à apprendre avant le JS ?");
+// /*
+//    * -------------------------------------------------------
+//    * 3 - Créer une fonction qui vérifie si l’utilisateur est apte à apprendre du Javascript : 
+//     avec prompt, demander successivement à l’utilisateur les deux langages de programmation à apprendre avant de démarrer le JS
+//     → S’il répond successivement HTML puis CSS, alors la fonction retourne vrai ; sinon faux.
+//     → Si l’exécution de la fonction retourne vrai, alors la console affiche “Bienvenue en JS jeune éphèbe”
+//     → Si l’exécution de la fonction retourne faux, alors la console affiche “Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais”
+//    * -------------------------------------------------------
+// */
+// let questionJave1 = prompt("Quel est le premier langage à apprendre avant le JS ?");
+// let questionJave2 = prompt("Quel est l'autre langage à apprendre avant le JS ?");
 
-if(questionJave1.toLocaleLowerCase() == "html" && questionJave2.toLocaleLowerCase() == "css") {
-    console.log("Bienvenue en JS jeune éphèbe");
-}
-else {
-    console.log("Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais");
-}
+// if(questionJave1.toLocaleLowerCase() == "html" && questionJave2.toLocaleLowerCase() == "css") {
+//     console.log("Bienvenue en JS jeune éphèbe");
+// }
+// else {
+//     console.log("Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais");
+// }
+
+
+//Exercice6
+// Voici un jeu de données : interdiction d'y toucher :) 
+const characterNames = [
+    "63AIS",
+    "A'misandra",
+    "Amimari",
+    "Alika",
+    "54B2",
+    "A'merpact",
+    "Amazora",
+  ];
+  
+  /*
+   * -------------------------------------------------------
+   * 1 - Afficher le nombre de personnages dans le tableau 
+   * -------------------------------------------------------
+   */
+  console.log(characterNames.length);
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 2 - Afficher le nom du premier personnage du tableau
+   * -------------------------------------------------------
+   */
+  console.log(characterNames[0]);
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 3 - Afficher le nom du dernier personnage (le 7eme)
+   * -------------------------------------------------------
+   */
+  console.log(characterNames[6]);
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 4 - Afficher le nom du dernier personnage **SANS** 
+   * savoir qu'il est le 7eme
+   * -------------------------------------------------------
+   */
+  console.log(characterNames[characterNames.length-1]);
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 5 - Afficher les noms de tous les personnages
+   * -------------------------------------------------------
+   */
+ for (let index = 0; index < characterNames.length; index++) {
+    console.log(characterNames[index]);
+ }
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 6 - Afficher le nom de chaque personnage accompagné du 
+   * nombre de caractères qu'il contient. Ex: Alika (5)
+   * -------------------------------------------------------
+   */
+  for (let index = 0; index < characterNames.length; index++) {
+    console.log(characterNames[index] + " (" + index + ")");
+  }
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 7 - Afficher le nom de chaque personnage en minuscules
+   * -------------------------------------------------------
+   */
+  for (let index = 0; index < characterNames.length; index++) {
+    console.log(characterNames[index].toLowerCase());
+  }
+  
+  
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 8 - Afficher le nombre de personnages dont le nom 
+   * contient la lettre 'a' (minuscule ou majuscule)
+   * -------------------------------------------------------
+   */
+  for (let index = 0; index < characterNames.length; index++) {
+    if(characterNames[index].indexOf("a") > -1 || characterNames[index].indexOf("A") > -1) {
+        console.log(characterNames[index]);
+    }
+  }
+  
+  
+  
+  /*
+   * -------------------------------------------------------
+   * 9 - Créer une fonction `search(needle)` qui renvoie 
+   * les personnages dont le nom contient les lettres 
+   * passées en paramètre.
+   * 
+   * Ex : search('Amim') doit renvoyer 'Amimari'
+   * ------------------------------------------------------- 
+   */
+  function search() {
+    let a = prompt("Que recherchez-vous ?");
+    for (let index = 0; index < characterNames.length; index++) {
+        if(characterNames[index].indexOf(a) > -1) {
+            console.log(characterNames[index]);
+        }
+      }
+  }
+  search();
