@@ -465,158 +465,158 @@
 //   }
 //   search();
 
-//Exercice6 Astro
-// Signes astrologiques fournis sous forme de chaîne de caractères
-const aries = `♈`;
-const taurus = `♉`;
-const gemini = `♊`;
-const cancer = `♋`;
-const leo = `♌`;
-const virgo = `♍`;
-const libra = `♎`;
-const scorpio = `♏`;
-const sagittarius = `♐`;
-const capricorn = `♑`;
-const aquarius = `♒`;
-const pisces = `♓︎`;
+// //Exercice6 Astro
+// // Signes astrologiques fournis sous forme de chaîne de caractères
+// const aries = `♈`;
+// const taurus = `♉`;
+// const gemini = `♊`;
+// const cancer = `♋`;
+// const leo = `♌`;
+// const virgo = `♍`;
+// const libra = `♎`;
+// const scorpio = `♏`;
+// const sagittarius = `♐`;
+// const capricorn = `♑`;
+// const aquarius = `♒`;
+// const pisces = `♓︎`;
 
-// Ces signes astrologiques peuvent être organisés en éléments de la terre : Terre, Eau, Air, Feu
-const fireSigns = [aries, leo];
-const earthSigns = [taurus, virgo, capricorn, sagittarius];
-const airSigns = [gemini, libra, aquarius];
-const waterSigns = [cancer, scorpio, pisces];
-
-
-
-// Étape 1 : Sagittarius est manquant dans les signes du feu. L'ajouter à la fin du tableau et vérifier le résultat.
-// écrire le code ici
-fireSigns.push(sagittarius);
-
-// test (à ne pas toucher) : 
-console.log(fireSigns[fireSigns.length - 1] === "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
-
-
-// Étape 2 : Sagittarius ne devrait plus faire partie des éléments de la terre. Le retirer et vérifier le résultat.
-// écrire le code ici
-earthSigns.pop();
-
-// test (à ne pas toucher)
-console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
-
-
-// Étape 3 : initialiser un tableau et le stocker dans une variable nommée "zodiacSigns"
-// écrire le code ici
-let zodiacSigns = [];
-
-
-// Étape 4 : fusionner Feu, Terre, Eau et Air dans zodiacSigns (dans cet ordre)
-// écrire le code ici
-zodiacSigns = fireSigns.concat(earthSigns);
-zodiacSigns = zodiacSigns.concat(waterSigns);
-zodiacSigns = zodiacSigns.concat(airSigns);
-
-// test (à ne pas toucher)
-console.log((zodiacSigns !== null && zodiacSigns.toString() === "♈,♌,♐,♉,♍,♑,♋,♏,♓︎,♊,♎,♒") ? "Good Answer ✅" : "Wrong Answer ❌");
-
-// Étape 5 : compléter la fonction ci-dessous pour afficher le nombre d'éléments dans le tableau zodiacSigns
-// écrire le code ici
-console.log(zodiacSigns.length);
-
-
-// //Exercice7
-// // Voici un objet qui représente un Chat : interdit d'y toucher :) 
-// const billyTheCat = {
-//     name: "billy",
-//     color: "black",
-//     favouriteFoods: ["fish", "chicken"],
-//     isHungry: true,
-//     meow: function () {
-//         return "Meeeeeeeow";
-//     }
-// }
-
-// /*
-//  * -------------------------------------------------------
-//  * 1 - Afficher les valeurs de chacunes des clés
-//  * -------------------------------------------------------
-//  */
-// console.log("name : " + billyTheCat.name);
-// console.log("color : " + billyTheCat.color);
-// console.log("favouriteFoods : " + billyTheCat.favouriteFoods);
-// console.log("isHungry : " + billyTheCat.isHungry);
-// console.log("meow : " + billyTheCat.meow);
+// // Ces signes astrologiques peuvent être organisés en éléments de la terre : Terre, Eau, Air, Feu
+// const fireSigns = [aries, leo];
+// const earthSigns = [taurus, virgo, capricorn, sagittarius];
+// const airSigns = [gemini, libra, aquarius];
+// const waterSigns = [cancer, scorpio, pisces];
 
 
 
-// /**
-//  * -------------------------------------------------------
-//  * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
-//  * -------------------------------------------------------
-//  */
-// let demand = prompt("Que voulez-vous ?");
-// console.log(billyTheCat[demand]);
+// // Étape 1 : Sagittarius est manquant dans les signes du feu. L'ajouter à la fin du tableau et vérifier le résultat.
+// // écrire le code ici
+// fireSigns.push(sagittarius);
+
+// // test (à ne pas toucher) : 
+// console.log(fireSigns[fireSigns.length - 1] === "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+
+// // Étape 2 : Sagittarius ne devrait plus faire partie des éléments de la terre. Le retirer et vérifier le résultat.
+// // écrire le code ici
+// earthSigns.pop();
+
+// // test (à ne pas toucher)
+// console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+
+// // Étape 3 : initialiser un tableau et le stocker dans une variable nommée "zodiacSigns"
+// // écrire le code ici
+// let zodiacSigns = [];
+
+
+// // Étape 4 : fusionner Feu, Terre, Eau et Air dans zodiacSigns (dans cet ordre)
+// // écrire le code ici
+// zodiacSigns = fireSigns.concat(earthSigns);
+// zodiacSigns = zodiacSigns.concat(waterSigns);
+// zodiacSigns = zodiacSigns.concat(airSigns);
+
+// // test (à ne pas toucher)
+// console.log((zodiacSigns !== null && zodiacSigns.toString() === "♈,♌,♐,♉,♍,♑,♋,♏,♓︎,♊,♎,♒") ? "Good Answer ✅" : "Wrong Answer ❌");
+
+// // Étape 5 : compléter la fonction ci-dessous pour afficher le nombre d'éléments dans le tableau zodiacSigns
+// // écrire le code ici
+// console.log(zodiacSigns.length);
+
+
+//Exercice7
+// Voici un objet qui représente un Chat : interdit d'y toucher :) 
+const billyTheCat = {
+    name: "billy",
+    color: "black",
+    favouriteFoods: ["fish", "chicken"],
+    isHungry: true,
+    meow: function () {
+        return "Meeeeeeeow";
+    }
+}
+
+/*
+ * -------------------------------------------------------
+ * 1 - Afficher les valeurs de chacunes des clés
+ * -------------------------------------------------------
+ */
+console.log("name : " + billyTheCat.name);
+console.log("color : " + billyTheCat.color);
+console.log("favouriteFoods : " + billyTheCat.favouriteFoods);
+console.log("isHungry : " + billyTheCat.isHungry);
+console.log("meow : " + billyTheCat.meow);
 
 
 
-// // Voici un tableau d'objets : interdit d'y toucher  :) 
-// const animals = [
-//     { name: "kitty", species: "cat", noise: "meow" },
-//     { name: "skaly", species: "squale", noise: "frrrrrr" },
-//     { name: "wormy", species: "worm", noise: "????" },
-//     { name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa" }
-// ];
-
-// /*
-//  * -------------------------------------------------------
-//  * 3 - Afficher le dernier élément
-//  * -------------------------------------------------------
-//  */
-// console.log(animals[3]);
+/**
+ * -------------------------------------------------------
+ * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
+ * -------------------------------------------------------
+ */
+let demand = prompt("Que voulez-vous ?");
+console.log(billyTheCat[demand]);
 
 
 
-// /**
-//  * -------------------------------------------------------
-//  * 3 - Afficher le dernier élément sans savoir que c'est le 4ème
-//  * -------------------------------------------------------
-//  */
-// console.log(animals[animals.length-1]);
+// Voici un tableau d'objets : interdit d'y toucher  :) 
+const animals = [
+    { name: "kitty", species: "cat", noise: "meow" },
+    { name: "skaly", species: "squale", noise: "frrrrrr" },
+    { name: "wormy", species: "worm", noise: "????" },
+    { name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa" }
+];
 
-
-// /**
-//  * -------------------------------------------------------
-//  * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
-//  * -------------------------------------------------------
-//  */
-// delete animals[1].name;
-// delete animals[2].species;
-
-
-
-// /**
-//  * -------------------------------------------------------
-//  * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
-//  * -------------------------------------------------------
-//  */
-// animals[0].name = animals[3].name;
-// console.log(animals);
+/*
+ * -------------------------------------------------------
+ * 3 - Afficher le dernier élément
+ * -------------------------------------------------------
+ */
+console.log(animals[3]);
 
 
 
-// // Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
-// const apple = {
-//     isEaten: false,
-//     eat: function () {
-//         return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
-//     }
-// }
+/**
+ * -------------------------------------------------------
+ * 3 - Afficher le dernier élément sans savoir que c'est le 4ème
+ * -------------------------------------------------------
+ */
+console.log(animals[animals.length-1]);
 
-// /**
-//  * -------------------------------------------------------
-//  * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
-//  * -------------------------------------------------------
-//  */
-// apple.eat();
-// if (apple.isEaten) {
-//   console.log(apple.eat());
-// }
+
+/**
+ * -------------------------------------------------------
+ * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
+ * -------------------------------------------------------
+ */
+delete animals[1].name;
+delete animals[2].species;
+
+
+
+/**
+ * -------------------------------------------------------
+ * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
+ * -------------------------------------------------------
+ */
+animals[0].name = animals[3].name;
+console.log(animals);
+
+
+
+// Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
+const apple = {
+    isEaten: false,
+    eat: function () {
+        return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
+    }
+}
+
+/**
+ * -------------------------------------------------------
+ * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
+ * -------------------------------------------------------
+ */
+apple.eat();
+if (apple.isEaten) {
+  console.log(apple.eat());
+}
