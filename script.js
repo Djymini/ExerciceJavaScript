@@ -75,23 +75,57 @@
 // );
 
 
-//Exercice2
+// //Exercice2
+// /*
+//    * -------------------------------------------------------
+//    * 1 - Renommer les variables correctement
+//    * -------------------------------------------------------
+// */
+
+// let firstName = "Bruno";
+
+// let description = "Salut je m'appelle Bruno et voici ma description";
+
+// const job = "Analyste financier au Yémen";
+
+// let age = 23;
+
+// let livingCity = "Bordeaux";
+
+// let numberList = "Une liste de nombres";
+
+// const bondName = "le prénom du plus grand agent secret de tous les temps";
+
+
+//Exercice 3
 /*
    * -------------------------------------------------------
-   * 1 - Renommer les variables correctement
+   * 1 - Afficher le type de chacune des variables dans la console
    * -------------------------------------------------------
 */
-
-let firstName = "Bruno";
-
-let description = "Salut je m'appelle Bruno et voici ma description";
-
-const job = "Analyste financier au Yémen";
-
-let age = 23;
-
-let livingCity = "Bordeaux";
-
-let numberList = "Une liste de nombres";
-
-const bondName = "le prénom du plus grand agent secret de tous les temps";
+const firstname = "Michel";
+const lastname = "Polnareff";
+let age = 123;
+const isUserLoggedIn = false;
+const account = undefined;
+let account2;
+const myVar = null;
+const user = {
+    firstname: "Michel",
+    lastname: "Polnareff",
+    email: "mich-mich@pol.com"
+}
+const colors = ['red', 'blue', 'green'];
+const onSayHello = function sayHello() {
+    return 'Hello';
+}
+console.log("firstname type is : " +typeof firstname);
+console.log("lastname type is : " +typeof lastname);
+console.log("age type is : " +typeof age);
+console.log("isUserLoggedIn type is : " +typeof isUserLoggedIn);
+console.log("account type is : " +typeof account);
+console.log("account2 type is : " +typeof account2);
+console.log("myVar type is : " +typeof myVar);
+console.log("user type is : " +typeof user);
+console.log("colors type is : " +typeof colors);
+console.log("onSayHello type is : " +typeof onSayHello);
